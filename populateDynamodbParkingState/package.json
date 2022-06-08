@@ -1,0 +1,18 @@
+{
+  "name": "populatedb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dataingest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1145.0",
+    "crypto": "^1.0.1",
+    "dynamodb-geo": "^0.4.0",
+    "fs": "^0.0.1-security",
+    "uuid": "^8.3.2"
+  }
+}
