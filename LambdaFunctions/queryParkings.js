@@ -38,7 +38,7 @@ exports.handler = async (event, context) => {
     }
     
     
-        // Querying 100m from 093 Harris Parkway for any open parking
+        // Use queryRadius function provided by dynamodb-geo library to query open parking in a given radius 
         await myGeoTableManager.queryRadius({
             RadiusInMeter: parseFloat(radius),
             CenterPoint: {
