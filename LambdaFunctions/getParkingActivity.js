@@ -12,7 +12,7 @@ exports.handler = function(event,context,callback) {
     console.log(event.queryStringParameters.deviceID.toString());
     console.log(event.queryStringParameters.ts1);
     console.log(event.queryStringParameters.ts2);
-
+// Use dynamodb query SDK to retrieve records.
     var params = {
         TableName:DDB_TABLENAME,
         KeyConditionExpression: "#dev = :dev AND #ts BETWEEN :ts1 AND :ts2",
